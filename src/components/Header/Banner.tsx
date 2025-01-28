@@ -4,7 +4,8 @@ export function Banner() {
   return (
     <Card sx={{ width: "100vw" }}>
       <CardMedia
-        sx={{ height: 140 }}
+        sx={{ height: 300
+         }}
         image="/static/images/cards/contemplative-reptile.jpg"
         title="green iguana"
       >
