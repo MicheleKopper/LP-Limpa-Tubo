@@ -1,7 +1,12 @@
+import { Banner } from "../components/Header/Banner";
+import { Header } from "../components/Header/Header";
+
+
 export function Home() {
   return (
-    <div>
-      <h1>Hellou</h1>
-    </div>
+    <>
+      <Header />
+      <Banner/>
+    </>
   );
 }
