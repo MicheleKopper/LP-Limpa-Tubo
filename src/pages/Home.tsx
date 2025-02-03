@@ -1,7 +1,8 @@
 
 import { Banner } from "../components/Header/Banner";
 import { Header } from "../components/Header/Header";
-import { Serviços } from "../components/Serviços/Serviços";
+import { Servicos } from "../components/Servicos/Servicos";
+
 
 
 export function Home() {
@@ -9,7 +10,8 @@ export function Home() {
     <>
       <Header />
       <Banner />
-      <Serviços />
+      <Servicos />
+     
     </>
   );
 }

@@ -6,12 +6,14 @@ export function ButtonWhatsApp() {
     <Button
       variant="contained"
       sx={{
+        minWidth: "180px", // Garante um tamanho mínimo fixo
+        maxWidth: "200px", // Evita que fique muito grande
+        width: { xs: "150px", sm: "180px", md: "200px" }, // Ajusta dinamicamente
+        fontSize: { xs: "12px", sm: "14px" }, // Reduz a fonte em telas menores
+        padding: { xs: "8px 16px", sm: "10px 20px" },
         bgcolor: "#25D366",
         color: "#fff",
-        fontSize: "14px",
-        padding: "10px 20px",
         borderRadius: "50px",
-        width: "200px",
         textTransform: "uppercase",
         outline: "2px solid #fff",
         outlineOffset: "-5px",

@@ -6,7 +6,7 @@ export const Themes = createTheme({
       fontFamily: "'Open Sans', sans-serif",
       fontSize: 45,
       fontWeight: 400,
-      "@media (max-width: 768px": {
+      "@media (max-width: 768px)": {
         fontSize: 30,
       },
     },
@@ -14,7 +14,7 @@ export const Themes = createTheme({
       fontFamily: "'Quicksand', sans-serif",
       fontSize: 24,
       fontWeight: 400,
-      "@media (max-width: 768px": {
+      "@media (max-width: 768px)": {
         fontSize: 18,
       },
     },
@@ -34,8 +34,6 @@ export const Themes = createTheme({
       fontSize: 15,
       fontWeight: 400,
     },
-
-
 
     body1: {
       fontFamily: "'Quicksand', sans-serif",
