@@ -1,11 +1,14 @@
-import { CssBaseline } from "@mui/material";
+import { CssBaseline, ThemeProvider } from "@mui/material";
 import { AppRoutes } from "./config/routes/AppRoutes";
+import { Themes } from "./config/themes/themes";
 
 function App() {
   return (
     <>
-      <CssBaseline />
-      <AppRoutes />
+      <ThemeProvider theme={Themes}>
+        <CssBaseline />
+        <AppRoutes />
+      </ThemeProvider>
     </>
   );
 }

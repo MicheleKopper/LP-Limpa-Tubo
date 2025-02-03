@@ -1,15 +1,36 @@
-import { Card, CardMedia, Typography } from "@mui/material";
+import { Box, Card, CardMedia, Typography } from "@mui/material";
 
 export function Banner() {
   return (
-    <Card sx={{ width: "100vw" }}>
-      <CardMedia sx={{ height: 350 }} image="./cupim.png" title="banner">
-        <Typography>Cupins? Nós Temos a Solução Definitiva!</Typography>
-        <Typography>
-          Acabe com os cupins e proteja seu patrimônio agora mesmo. A Limpa Tubo
-          oferece um serviço rápido, seguro e 100% eficaz contra infestações.
+    <Card sx={{ width: "100vw", position: "relative", borderRadius: 0 }}>
+      <CardMedia sx={{ height: 400 }} image="/cupim.png" title="banner" />
+      <Box
+        sx={{
+          position: "absolute",
+          top: 0,
+          left: 0,
+          width: "100%",
+          height: "100%",
+          backgroundColor: "rgba(0, 0, 0, 0.7)",
+          display: "flex",
+          flexDirection: "column",
+          justifyContent: "center",
+          alignItems: "center",
+          textAlign: "center",
+          color: "white",
+          px: 2,
+        }}
+      >
+        <Typography variant="h6">
+          Serviço rápido, seguro e 100% eficaz contra infestações
         </Typography>
-      </CardMedia>
+        <Typography variant="h5" gutterBottom>
+          CUPINS? NÓS TEMOS A SOLUÇÃO DEFINITIVA
+        </Typography>
+        <Typography variant="h6">
+          Atendemos 24h toda POA e Região Metropolitana
+        </Typography>
+      </Box>
     </Card>
   );
 }

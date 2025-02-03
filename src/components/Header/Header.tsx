@@ -12,6 +12,9 @@ export function Header() {
             alignItems: "center",
             justifyContent: "space-between",
             position: "relative",
+            height:"85px",
+            
+            
           }}
         >
           <Box>
@@ -19,7 +22,7 @@ export function Header() {
               src="/logo.png"
               alt="Logo"
               style={{
-                width: "120px",
+                width: "160px",
                 height: "auto",
                 objectFit: "contain",
               }}
