@@ -3,12 +3,7 @@ import { Card, CardMedia, Typography } from "@mui/material";
 export function Banner() {
   return (
     <Card sx={{ width: "100vw" }}>
-      <CardMedia
-        sx={{ height: 300
-         }}
-        image="/static/images/cards/contemplative-reptile.jpg"
-        title="green iguana"
-      >
+      <CardMedia sx={{ height: 350 }} image="./cupim.png" title="banner">
         <Typography>Cupins? Nós Temos a Solução Definitiva!</Typography>
         <Typography>
           Acabe com os cupins e proteja seu patrimônio agora mesmo. A Limpa Tubo
