@@ -49,20 +49,42 @@ export function Servicos() {
         margin: "50px 20px",
       }}
     >
-      <Typography variant="h3">DESCUPINIZAÇÃO</Typography>
-      <Typography variant="h4">Soluções eficazes contra cupins</Typography>
+      <Typography
+        variant="h3"
+        sx={{
+          fontFamily: "'Quicksand', sans-serif",
+          fontSize: 40,
+          fontWeight: 400,
+        }}
+      >
+        DESCUPINIZAÇÃO
+      </Typography>
+      <Typography
+        variant="h4"
+        sx={{
+          fontFamily: "'Quicksand', sans-serif",
+          fontSize: 30,
+          fontWeight: 400,
+          color: "rgb(245, 130, 31)",
+        }}
+      >
+        Soluções eficazes contra cupins
+      </Typography>
       <Typography
         variant="subtitle1"
         sx={{
           maxWidth: "800px",
           margin: "10px auto",
+          fontFamily: "'Quicksand', sans-serif",
+          fontSize: 15,
+          fontWeight: 400,
         }}
       >
         A <strong>Limpa Tubo</strong> oferece descupinização especializada e
         preventiva para ambientes residenciais, comerciais, industriais e
-        condomínios, utilizando métodos seguros para proteger sua
-        estrutura, móveis e até estabelecimentos do setor de food services
-        contra infestações de cupins.
+        condomínios, utilizando métodos seguros para proteger sua estrutura,
+        móveis e até estabelecimentos do setor de food services contra
+        infestações de cupins.
       </Typography>
 
       {/* Grid Responsivo */}
@@ -91,10 +113,26 @@ export function Servicos() {
             >
               <Box>{serviço.icone}</Box>
               <CardContent>
-                <Typography variant="body1" sx={{ fontWeight: "bold" }}>
+                <Typography
+                  variant="body1"
+                  sx={{
+                    fontFamily: "'Quicksand', sans-serif",
+                    fontSize: 14,
+                    fontWeight: 800,
+                  }}
+                >
                   {serviço.titulo}
                 </Typography>
-                <Typography variant="subtitle2">{serviço.descricao}</Typography>
+                <Typography
+                  variant="subtitle2"
+                  sx={{
+                    fontFamily: "'Quicksand', sans-serif",
+                    fontSize: 13,
+                    fontWeight: 400,
+                  }}
+                >
+                  {serviço.descricao}
+                </Typography>
               </CardContent>
             </Card>
           </Grid>

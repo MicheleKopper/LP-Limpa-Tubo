@@ -25,17 +25,35 @@ export function Banner() {
           px: 2,
         }}
       >
-        <Typography variant="h6" sx={{ fontSize: { xs: 14, sm: 18, md: 24 } }}>
+        <Typography
+          variant="h6"
+          sx={{
+            fontFamily: "'Quicksand', sans-serif",
+            fontSize: 24,
+            fontWeight: 400,
+          }}
+        >
           Serviço rápido, seguro e 100% eficaz contra infestações
         </Typography>
         <Typography
           variant="h5"
-          sx={{ fontSize: { xs: 18, sm: 24, md: 32 } }}
+          sx={{
+            fontFamily: "'Open Sans', sans-serif",
+            fontSize: 45,
+            fontWeight: 400,
+          }}
           gutterBottom
         >
           CUPINS? NÓS TEMOS A SOLUÇÃO DEFINITIVA
         </Typography>
-        <Typography variant="h6" sx={{ fontSize: { xs: 14, sm: 18, md: 24 } }}>
+        <Typography
+          variant="h6"
+          sx={{
+            fontFamily: "'Quicksand', sans-serif",
+            fontSize: 24,
+            fontWeight: 400,
+          }}
+        >
           Atendemos 24h toda POA e Região Metropolitana
         </Typography>
       </Box>

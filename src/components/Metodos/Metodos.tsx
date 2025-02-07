@@ -34,7 +34,7 @@ export function Metodos() {
         padding: "20px",
         alignItems: "center",
         bgcolor: "#F5811F",
-        height: "500px",
+        height: "400px",
       }}
     >
       {/* Coluna da Imagem */}
@@ -108,23 +108,68 @@ export function Metodos() {
           flexDirection: "column",
           justifyContent: "center",
           padding: "20px",
+          color: "white",
+          gap: 1,
         }}
       >
         <Typography
           variant="h4"
-          sx={{ fontWeight: "bold", marginBottom: "20px", color:"white"}}
+          sx={{
+            fontFamily: "'Quicksand', sans-serif",
+            fontSize: 25,
+            fontWeight: 600,
+          }}
         >
-          Cupim de Madeira Seca (Cryptotermes brevis)
+          MÉTODOS DE CONTROLE DE CUPINS
         </Typography>
-        <Typography variant="body1">
-          Entre insetos, os cupins são responsáveis por importante papel na
-          decomposição de matéria orgânica, porém no perímetro urbano podem
-          causar prejuízos irreparáveis. Sua alimentação é baseada na celulose,
-          matéria-prima extraída da madeira aplicada a vários materiais. Logo,
-          os cupins podem danificar livros, tecidos, os próprios artigos de
-          madeira, entre outros. Além disso, os cupins multiplicam-se com
-          facilidade e chegam a mais de 200 espécies catalogadas.
-        </Typography>
+
+        
+
+        {/* Lista de Métodos */}
+        {[
+          {
+            title: "RASPAGEM",
+            description:
+              "Remoção mecânica das partes infestadas, eliminando colônias visíveis e impedindo a propagação. Ideal para pequenos focos em móveis e estruturas de madeira.",
+          },
+          {
+            title: "INJEÇÃO",
+            description:
+              "Inseticidas são aplicados diretamente dentro das galerias dos cupins de madeira seca, garantindo a eliminação da colônia.",
+          },
+          {
+            title: "PULVERIZAÇÃO",
+            description:
+              "Criação de uma camada protetora sobre superfícies vulneráveis, evitando infestações e interrompendo o ciclo de vida dos cupins.",
+          },
+          {
+            title: "BARREIRA QUÍMICA",
+            description:
+              "Proteção contra cupins subterrâneos, criando um bloqueio químico no solo para evitar que a praga atinja a estrutura.",
+          },
+        ].map((method, index) => (
+          <Box
+            key={index}
+            sx={{
+              display: "flex",
+              alignItems: "flex-start",
+              
+            }}
+          >
+            
+            <Typography
+              variant="body1"
+              sx={{
+                fontFamily: "'Quicksand', sans-serif",
+                fontSize: 14,
+                fontWeight: 400,
+                marginTop:"5px"
+              }}
+            >
+              <strong>{method.title}</strong> - {method.description}
+            </Typography>
+          </Box>
+        ))}
       </Grid2>
     </Grid2>
   );

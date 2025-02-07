@@ -1,4 +1,3 @@
-
 import { Box, Card, CardContent, Grid, Typography } from "@mui/material";
 
 export function Pragas() {
@@ -63,13 +62,35 @@ export function Pragas() {
         margin: "50px 20px",
       }}
     >
-      <Typography variant="h3">CONTROLE DE OUTRAS PRAGAS</Typography>
-      <Typography variant="h4">Mais segurança, menos preocupações</Typography>
+      <Typography
+        variant="h3"
+        sx={{
+          fontFamily: "'Quicksand', sans-serif",
+          fontSize: 40,
+          fontWeight: 400,
+        }}
+      >
+        CONTROLE DE OUTRAS PRAGAS
+      </Typography>
+      <Typography
+        variant="h4"
+        sx={{
+          fontFamily: "'Quicksand', sans-serif",
+          fontSize: 30,
+          fontWeight: 400,
+          color: "rgb(245, 130, 31)",
+        }}
+      >
+        Mais segurança, menos preocupações
+      </Typography>
       <Typography
         variant="subtitle1"
         sx={{
           maxWidth: "800px",
           margin: "10px auto",
+          fontFamily: "'Quicksand', sans-serif",
+          fontSize: 15,
+          fontWeight: 400,
         }}
       >
         Não deixe as pragas tomarem conta! Cuidamos da sua casa e empresa com
@@ -102,10 +123,26 @@ export function Pragas() {
             >
               <Box>{serviço.icone}</Box>
               <CardContent>
-                <Typography variant="body1" sx={{ fontWeight: "bold" }}>
+                <Typography
+                  variant="body1"
+                  sx={{
+                    fontWeight: "bold",
+                    fontFamily: "'Quicksand', sans-serif",
+                    fontSize: 14,
+                  }}
+                >
                   {serviço.titulo}
                 </Typography>
-                <Typography variant="subtitle2">{serviço.descricao}</Typography>
+                <Typography
+                  variant="subtitle2"
+                  sx={{
+                    fontFamily: "'Quicksand', sans-serif",
+                    fontSize: 13,
+                    fontWeight: 400,
+                  }}
+                >
+                  {serviço.descricao}
+                </Typography>
               </CardContent>
             </Card>
           </Grid>
