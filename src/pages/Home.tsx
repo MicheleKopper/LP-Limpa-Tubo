@@ -5,6 +5,7 @@ import { Header } from "../components/Header/Header";
 import { Metodos } from "../components/Metodos/Metodos";
 import { Pragas } from "../components/Pragas/Pragas";
 import { Servicos } from "../components/Servicos/Servicos";
+import { SobreNos } from "../components/SobreNos/SobreNos";
 
 
 
@@ -16,6 +17,7 @@ export function Home() {
       <Servicos />
       <Metodos/>
       <Pragas/>
+      <SobreNos />
      <Footer />
     </>
   );

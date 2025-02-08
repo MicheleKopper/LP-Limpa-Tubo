@@ -28,13 +28,13 @@ export function Metodos() {
       container
       sx={{
         display: "grid",
-        gridTemplateColumns: "1fr 1fr",
+        gridTemplateColumns: { xs: "1fr", sm: "1fr 1fr" }, // Largura 100% em telas pequenas e 50% em telas maiores
         gap: 2,
         width: "100%",
         padding: "20px",
         alignItems: "center",
         bgcolor: "#F5811F",
-        height: "400px",
+        height: "auto", // Ajusta a altura de acordo com o conteúdo
       }}
     >
       {/* Coluna da Imagem */}
@@ -109,7 +109,7 @@ export function Metodos() {
           justifyContent: "center",
           padding: "20px",
           color: "white",
-          gap: 1,
+          gap: 2,
         }}
       >
         <Typography
@@ -123,29 +123,27 @@ export function Metodos() {
           MÉTODOS DE CONTROLE DE CUPINS
         </Typography>
 
-        
-
         {/* Lista de Métodos */}
         {[
           {
             title: "RASPAGEM",
             description:
-              "Remoção mecânica das partes infestadas, eliminando colônias visíveis e impedindo a propagação. Ideal para pequenos focos em móveis e estruturas de madeira.",
+              "Remoção mecânica das partes infestadas, eliminando colônias visíveis e impedindo a propagação. Ideal para pequenos focos em móveis e estruturas de madeira",
           },
           {
             title: "INJEÇÃO",
             description:
-              "Inseticidas são aplicados diretamente dentro das galerias dos cupins de madeira seca, garantindo a eliminação da colônia.",
+              "Inseticidas são aplicados diretamente dentro das galerias dos cupins de madeira seca, garantindo a eliminação da colônia",
           },
           {
             title: "PULVERIZAÇÃO",
             description:
-              "Criação de uma camada protetora sobre superfícies vulneráveis, evitando infestações e interrompendo o ciclo de vida dos cupins.",
+              "Criação de uma camada protetora sobre superfícies vulneráveis, evitando infestações e interrompendo o ciclo de vida dos cupins",
           },
           {
             title: "BARREIRA QUÍMICA",
             description:
-              "Proteção contra cupins subterrâneos, criando um bloqueio químico no solo para evitar que a praga atinja a estrutura.",
+              "Proteção contra cupins subterrâneos, criando um bloqueio químico no solo para evitar que a praga atinja a estrutura",
           },
         ].map((method, index) => (
           <Box
@@ -153,17 +151,15 @@ export function Metodos() {
             sx={{
               display: "flex",
               alignItems: "flex-start",
-              
             }}
           >
-            
             <Typography
               variant="body1"
               sx={{
                 fontFamily: "'Quicksand', sans-serif",
                 fontSize: 14,
                 fontWeight: 400,
-                marginTop:"5px"
+                marginTop: "5px",
               }}
             >
               <strong>{method.title}</strong> - {method.description}

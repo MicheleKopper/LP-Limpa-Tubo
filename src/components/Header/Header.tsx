@@ -10,11 +10,11 @@ export function Header() {
             bgcolor: "white",
             display: "flex",
             alignItems: "center",
-            justifyContent: { xs: "center", md: "space-between" }, // Centralizado no mobile, separado no desktop
-            flexDirection: { xs: "column", md: "row" }, // Empilha no mobile
+            justifyContent: { xs: "center", md: "space-between" },
+            flexDirection: { xs: "column", md: "row" },
             height: { xs: "auto", md: "85px" },
-            padding: { xs: "15px 20px", md: "0 40px" }, // Padding lateral maior no desktop
-            gap: { xs: "10px", md: "0" }, // Espaço entre elementos no mobile
+            padding: { xs: "15px 20px", md: "0 60px" },
+            gap: { xs: "10px", md: "0" },
           }}
         >
           <Box>

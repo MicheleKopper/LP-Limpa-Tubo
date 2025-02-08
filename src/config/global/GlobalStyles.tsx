@@ -17,7 +17,16 @@ const styles: Record<string, CSSObject> = {
   "*": {
     margin: 0,
     padding: 0,
-    fontFamily: "'Open Sans', 'Quicksand', sans-serif",
+    fontFamily: "'Quicksand', sans-serif", // Aplica a Quicksand globalmente
+  },
+  body: {
+    fontFamily: "'Quicksand', sans-serif", // Garante que o body use Quicksand
+  },
+  "h1, h2, h3, h4, h5, h6": {
+    fontFamily: "'Quicksand', sans-serif", // Aplica Quicksand nos títulos
+  },
+  p: {
+    fontFamily: "'Quicksand', sans-serif", // Aplica Quicksand no texto
   },
 };
 
